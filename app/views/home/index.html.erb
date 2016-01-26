@@ -1,3 +1,5 @@
 <h2 id="topic"><%= @random_flashcard.topic %></h2>
-<%= link_to 'Show', '#', id: 'show-button' %>
+<%= link_to 'Show', '#', id: 'show-button', class: 'button' %>
+<%= link_to 'Hide', '#', id: 'hide-button', class: 'button' %>
+<%= link_to 'Refresh', '#', id: 'refresh-button', class: 'button' %>
 <div id="definition"><%= parse_markdown(@random_flashcard.definition).html_safe %></p>

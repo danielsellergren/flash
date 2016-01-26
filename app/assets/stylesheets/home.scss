@@ -10,7 +10,7 @@ body {
   letter-spacing: 0px;
   font-weight: 900;
 }
-#show-button {
+.button {
   -moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
   -webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
   box-shadow:inset 0px 39px 0px -24px #e67a73;
@@ -28,12 +28,15 @@ body {
   text-decoration:none;
   text-shadow:0px 1px 0px #b23e35;
 }
-#show-button:hover {
+.button:hover {
   background-color:#eb675e;
 }
-#show-button:active {
+.button:active {
   position:relative;
   top:1px;
+}
+#hide-button {
+  display: none;
 }
 #definition {
   display: none;
