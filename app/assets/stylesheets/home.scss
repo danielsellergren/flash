@@ -2,12 +2,52 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  padding: 0 10px;
+}
 #topic {
-
+  font-size: 2em;
+  letter-spacing: 0px;
+  font-weight: 900;
 }
 #show-button {
-
+  -moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
+  -webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
+  box-shadow:inset 0px 39px 0px -24px #e67a73;
+  background-color:#e4685d;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  border:1px solid #ffffff;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Courier New;
+  font-size:15px;
+  padding:13px 33px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+}
+#show-button:hover {
+  background-color:#eb675e;
+}
+#show-button:active {
+  position:relative;
+  top:1px;
 }
 #definition {
   display: none;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  pre {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+  code {
+    font-size: 0.8em;
+    font-family: 'Courier New';
+    font-weight: 100;
+    line-height: 0.8em;
+  }
 }
