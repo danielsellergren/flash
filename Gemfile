@@ -32,6 +32,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use Clearance for authentication
+gem 'clearance'
+
 # Use RedCarpet for markdown processing
 gem 'redcarpet'
 
