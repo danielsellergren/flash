@@ -8,7 +8,7 @@
 
 Card.destroy_all
 Card.create!(
-  topic: "Polymorphism",
+  topic: "Polymorphic association",
   definition: %{
 With polymorphic associations, a model can belong to more than one other model, on a single association. For example, you might have a picture model that belongs to either an employee model or a product model. You can think of a polymorphic belongs_to declaration as setting up an interface that any other model can use.
 
@@ -32,5 +32,45 @@ If you don't have a type column defined in your table, single-table inheritance 
 Note, all the attributes for all the cases are kept in the same table.
 
 * [Ruby on Rails API](http://api.rubyonrails.org/classes/ActiveRecord/Inheritance.html)
+  }
+)
+Card.create!(
+  topic: "ActiveSupport::Inflector",
+  definition: %{
+The Inflector transforms words from singular to plural, class names to table names, modularized class names to ones without, and class names to foreign keys. The default inflections for pluralization, singularization, and uncountable words are kept in `inflections.rb`.
+  }
+)
+Card.create!(
+  topic: "Active Record Callbacks",
+  definition: %{
+Callbacks are methods that get called at certain moments of an object's life cycle. With callbacks it is possible to write code that will run whenever an Active Record object is created, saved, updated, deleted, validated, or loaded from the database.
+
+### Creating an Object
+* `before_validation`
+* `after_validation`
+* `before_save`
+* `around_save`
+* `before_create`
+* `around_create`
+* `after_create`
+* `after_save`
+* `after_commit`/`after_rollback`
+
+### Updating an Object
+* `before_validation`
+* `after_validation`
+* `before_save`
+* `around_save`
+* `before_update`
+* `around_update`
+* `after_update`
+* `after_save`
+* `after_commit`/`after_rollback`
+
+### Destroying an Object
+* `before_destroy`
+* `around_destroy`
+* `after_destroy`
+* `after_commit`/`after_rollback`
   }
 )
