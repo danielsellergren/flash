@@ -3,10 +3,3 @@
 <%= link_to 'Hide', '#', id: 'hide-button', class: 'button' %>
 <%= link_to 'Refresh', '#', id: 'refresh-button', class: 'button' %>
 <div id="definition"><%= parse_markdown(@random_flashcard.definition).html_safe %></p>
-
-<% if signed_in? %>
-  Signed in as: <%= current_user.email %>
-  <%= button_to 'Sign out', sign_out_path, method: :delete %>
-<% else %>
-  <%= link_to 'Sign in', sign_in_path %>
-<% end %>
