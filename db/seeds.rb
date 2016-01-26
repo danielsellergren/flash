@@ -74,3 +74,19 @@ Callbacks are methods that get called at certain moments of an object's life cyc
 * `after_commit`/`after_rollback`
   }
 )
+Card.create!(
+  topic: "Mock Objects",
+  definition: %{
+In object-oriented programming, mock objects are simulated objects that mimic the behavior of real objects in controlled ways. A programmer typically creates a mock object to test the behavior of some other object, in much the same way that a car designer uses a crash test dummy to simulate the dynamic behavior of a human in vehicle impacts.
+
+In a unit test, mock objects can simulate the behavior of complex, real objects and are therefore useful when a real object is impractical or impossible to incorporate into a unit test.
+
+Classification between mocks, fakes, and stubs is highly inconsistent across literature. Consistent among the literature, though, is that they all represent a production object in a testing environment by exposing the same interface.
+
+Example: Mocha asynchronous test framework for JS
+
+### Links
+
+* [Wikipedia - Mock Objects](https://en.wikipedia.org/wiki/Mock_object)
+  }
+)
