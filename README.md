@@ -22,3 +22,7 @@ Create the database.
 ## Usage
 
 Add your own cards to the seed file or add the resources route and set up a little CMS for creating and managing your cards. I'll probably do something like it soon, I just wanted something that was functional at the moment.
+
+## !TODO
+
+* Make fully responsive

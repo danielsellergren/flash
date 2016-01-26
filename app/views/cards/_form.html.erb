@@ -11,7 +11,13 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= f.text_field :topic, placeholder: 'Topic' %>
+  </div>
+  <div class="field">
+    <%= f.text_area :definition, placeholder: 'Definition' %>
+  </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Submit', class: 'button' %>
   </div>
 <% end %>
