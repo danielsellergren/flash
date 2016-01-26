@@ -12,7 +12,7 @@ Card.create!(
   definition: %{
 With polymorphic associations, a model can belong to more than one other model, on a single association. For example, you might have a picture model that belongs to either an employee model or a product model. You can think of a polymorphic belongs_to declaration as setting up an interface that any other model can use.
 
-* http://guides.rubyonrails.org/association_basics.html#polymorphic-associations
+* [Ruby on Rails Guide](http://guides.rubyonrails.org/association_basics.html#polymorphic-associations)
   }
 )
 Card.create!(
@@ -25,6 +25,12 @@ Active Record allows inheritance by storing the name of the class in a column th
     class Client < Company; end
     class PriorityClient < Client; end
 
-* http://api.rubyonrails.org/classes/ActiveRecord/Inheritance.html
+When you do `Firm.create(name: "37signals")`, this record will be saved in the companies table with `type = "Firm"`. You can then fetch this row again using `Company.where(name: '37signals').first` and it will return a Firm object.
+
+If you don't have a type column defined in your table, single-table inheritance won't be triggered. In that case, it'll work just like normal subclasses with no special magic for differentiating between them or reloading the right type with find.
+
+Note, all the attributes for all the cases are kept in the same table.
+
+* [Ruby on Rails API](http://api.rubyonrails.org/classes/ActiveRecord/Inheritance.html)
   }
 )
