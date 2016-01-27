@@ -90,3 +90,9 @@ Example: Mocha asynchronous test framework for JS
 * [Wikipedia - Mock Objects](https://en.wikipedia.org/wiki/Mock_object)
   }
 )
+Card.create!(
+  topic: "Authentication vs. Authorization",
+  definition: %{
+Authentication is determining whether or not someone who visits your site is who you think they are, like logging in. Authorization is deciding whether or not a user is allowed to perform some sort of action, like creating a new post.
+  }
+)
