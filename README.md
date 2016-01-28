@@ -6,8 +6,8 @@ Simple flashcard app for programming concepts because I couldn't find any index 
 
 Clone the repository.
 
-    git clone https://github.com/danielsellergren/flashcards.git
-    cd flashcards
+    git clone https://github.com/danielsellergren/flash.git
+    cd flash
 
 Bundle the Gemfile.
 
