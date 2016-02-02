@@ -135,3 +135,28 @@ Rails supports database-enforced foreign keys as of version 4.2.
 * [Foreign Key Gotchas](http://sevenseacat.net/2015/02/24/add_foreign_key_gotchas.html)
   )
 )
+Card.create!(
+  topic: "Rack",
+  definition: %(
+Rack provides a modular and adaptable interface for developing web applications in Ruby. By wrapping HTTP requests and responses it unifies the API for web servers, web frameworks, and software in between (the so-called middleware) into a single method call.
+
+Rack is used by many Ruby web frameworks and libraries, such as Ruby On Rails and Sinatra. It is available as a Ruby Gem.
+
+### Links
+
+* [Wikipedia - Rack (web server interface)](https://en.wikipedia.org/wiki/Rack_(web_server_interface))
+* [Introducing Rack](http://chneukirchen.org/blog/archive/2007/02/introducing-rack.html)
+  )
+)
+Card.create!(
+  topic: "Active Job",
+  definition: %(
+Active Job is a framework for declaring jobs and making them run on a variety of queuing backends. These jobs can be everything from regularly scheduled clean-ups, to billing charges, to mailings. Anything that can be chopped up into small units of work and run in parallel, really.
+
+The main point is to ensure that all Rails apps will have a job infrastructure in place. We can then have framework features and other gems build on top of that, without having to worry about API differences between various job runners such as Delayed Job and Resque. Picking your queuing backend becomes more of an operational concern, then. And you'll be able to switch between them without having to rewrite your jobs.
+
+### Links
+
+* [Active Job Basics](http://edgeguides.rubyonrails.org/active_job_basics.html)
+  )
+)
