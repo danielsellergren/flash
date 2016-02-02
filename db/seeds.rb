@@ -115,6 +115,23 @@ According to the authors of Design Patterns, there must be at least two key elem
 1. A commonly used process, structure or pattern of action that despite initially appearing to be an appropriate and effective response to a problem, typically has more bad consequences than beneficial results, and
 2. A good alternative solution exists that is documented, repeatable and proven to be effective.
 
+### Links
+
 * [Wikipedia - Anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern)
+  )
+)
+Card.create!(
+  topic: "Foreign Key",
+  definition: %(
+A foreign key is a column (or columns) that references a column (most often the primary key) of another table. The purpose of the foreign key is to ensure referential integrity of the data. In other words, only values that are supposed to appear in the database are permitted. For example a `Book` might have an `author_id` that contains the unique primary key of the Author so that they are linked.
+
+Rails supports database-enforced foreign keys as of version 4.2.
+
+### Links
+
+* [Rails 4.2 Release Notes](http://edgeguides.rubyonrails.org/4_2_release_notes.html#foreign-key-support)
+* [Foreign Keys in Rails 4.2](https://richonrails.com/articles/foreign-keys-in-rails-4-2)
+* [Thoughtbot Guide to Rails foreign_keys](https://robots.thoughtbot.com/referential-integrity-with-foreign-keys)
+* [Foreign Key Gotchas](http://sevenseacat.net/2015/02/24/add_foreign_key_gotchas.html)
   )
 )
