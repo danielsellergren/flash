@@ -96,3 +96,25 @@ Card.create!(
 Authentication is determining whether or not someone who visits your site is who you think they are, like logging in. Authorization is deciding whether or not a user is allowed to perform some sort of action, like creating a new post.
   }
 )
+Card.create!(
+  topic: "Railties",
+  definition: %(
+All major components of Rails are created as a subclass of `Rails::Railtie`. For example, Active Record (which handles query syntax to a database) and Action Controller (which handles the base controller logic) are both Railties. `Railtie` is an abstract class which is not meant for instantiation, and even throws an error on the `#initialize` method unless it's overwritten in a subclass. Other methods on the `Railtie` class include `#rake_tasks`, `#console`, `#runner`, and `#generators`.
+
+### Links
+
+* [Class definition](https://github.com/rails/rails/blob/master/railties/lib/rails/railtie.rb)
+* [Introduction to Railties](http://wangjohn.github.io/railties/rails/gsoc/2013/07/10/introduction-to-railties.html)
+  )
+)
+Card.create!(
+  topic: "Antipattern",
+  definition: %(
+According to the authors of Design Patterns, there must be at least two key elements present to formally distinguish an actual anti-pattern from a simple bad habit, bad practice, or bad idea:
+
+1. A commonly used process, structure or pattern of action that despite initially appearing to be an appropriate and effective response to a problem, typically has more bad consequences than beneficial results, and
+2. A good alternative solution exists that is documented, repeatable and proven to be effective.
+
+* [Wikipedia - Anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern)
+  )
+)
