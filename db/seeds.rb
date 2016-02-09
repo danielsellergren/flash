@@ -209,3 +209,13 @@ The output will be:
     I have 4 apples
   )
 )
+Card.create!(
+  topic: "Finite-state Machine",
+  definition: %(
+A finite-state machine (FSM) or finite-state automaton (plural: automata), or simply a state machine, is a mathematical model of computation used to design both computer programs and sequential logic circuits. It is conceived as an abstract machine that can be in one of a finite number of states. The machine is in only one state at a time; the state it is in at any given time is called the current state. It can change from one state to another when initiated by a triggering event or condition; this is called a transition. A particular FSM is defined by a list of its states, and the triggering condition for each transition.
+
+### Links
+
+* [Wikipedia - Finite-state machine](https://en.wikipedia.org/wiki/Finite-state_machine)
+  )
+)
