@@ -160,3 +160,35 @@ The main point is to ensure that all Rails apps will have a job infrastructure i
 * [Active Job Basics](http://edgeguides.rubyonrails.org/active_job_basics.html)
   )
 )
+Card.create!(
+  topic: "Duck Typing",
+  definition: %(
+In computer programming with object-oriented programming languages, duck typing is a layer of programming language and design rules on top of typing. Typing is concerned with assigning a type to any object. Duck typing is concerned with establishing the suitability of an object for some purpose. With normal typing, suitability is assumed to be determined by an object's type only. In duck typing, an object's suitability is determined by the presence of certain methods and properties (with appropriate meaning), rather than the actual type of the object.
+
+The name of the concept refers to the duck test, attributed to James Whitcomb Riley, which may be phrased as follows:
+
+> When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck.
+
+In duck typing, a programmer is only concerned with ensuring that objects behave as demanded of them in a given context, rather than ensuring that they are of a specific class. For example, in a non-duck-typed language, one would create a function that requires that the object passed into it be of type Duck, or descended from type Duck, in order to ensure that that function can then use the object's walk and quack methods. In a duck-typed language, the function would take an object of any type and simply call its walk and quack methods, producing a run-time error if they are not defined. Instead of specifying types formally, duck typing practices rely on documentation, clear code, and testing to ensure correct use.
+
+    class Duck
+      def quack
+        puts "Quaaaaaack!"
+      end
+
+      def feathers
+        puts "The duck has white and gray feathers."
+      end
+    end
+
+    class Person
+      def quack
+        puts "The person imitates a duck."
+      end
+
+      def feathers
+        puts "The person takes a feather from the ground and shows it."
+      end
+    end
+  )
+)
