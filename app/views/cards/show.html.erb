@@ -1,4 +1,11 @@
-<p id="notice"><%= notice %></p>
+<h2 id="topic"><%= @card.topic %></h2>
 
-<%= link_to 'Edit', edit_card_path(@card) %> |
-<%= link_to 'Back', cards_path %>
+<div class="links">
+  <%= link_to 'Show', '#', id: 'show-button', class: 'button' %>
+  <%= link_to 'Hide', '#', id: 'hide-button', class: 'button' %>
+  <%= link_to 'Refresh', '#', id: 'refresh-button', class: 'button' %>
+</div>
+
+<div id="definition">
+  <%= parse_markdown(@card.definition).html_safe %>
+</div>
