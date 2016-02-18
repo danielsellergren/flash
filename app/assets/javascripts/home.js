@@ -1,20 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var showButton = document.getElementById('show-button');
-  var hideButton = document.getElementById('hide-button');
-  var refreshButton = document.getElementById('refresh-button')
-  var definition = document.getElementById('definition');
-  console.log(showButton);
-  showButton.addEventListener('click', function(e) {
-    definition.style.display = "block";
-    showButton.style.display = "none";
-    hideButton.style.display = "inline-block"
-  }, false);
-  hideButton.addEventListener('click', function(e) {
-    definition.style.display = "none";
-    showButton.style.display = "inline-block";
-    hideButton.style.display = "none";
-  }, false);
-  refreshButton.addEventListener('click', function(e) {
+// Hide/show definition
+$(document).ready(function() {
+
+  // Variables
+  $showButton = $('#show-button');
+  $hideButton = $('#hide-button');
+  $refreshButton = $('#refresh-button');
+  $definition = $('#definition');
+
+  // Show button
+  $showButton.on('click', function(e) {
+    $definition.show();
+    $showButton.hide();
+    $hideButton.show();
+  });
+
+  // Hide button
+  $hideButton.on('click', function(e) {
+    $definition.hide();
+    $showButton.show();
+    $hideButton.hide();
+  });
+
+  // Refresh button
+  $refreshButton.on('click', function(e) {
     document.location.reload(true);
   });
 });
