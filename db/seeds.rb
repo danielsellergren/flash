@@ -198,7 +198,7 @@ Card.create!(
 In computer programming, string interpolation or variable interpolation (also variable substitution or variable expansion) is the process of evaluating a string literal containing one or more placeholders, yielding a result in which the placeholders are replaced with their corresponding values. It is a form of simple template processing, or, in formal terms, a form of Quasi-quotation (or logic substitution interpretation). String interpolation allows for easier and more intuitive string formatting and content-specification compared with string concatenation.
 
     apples = 4
-    puts "I have #{apples} apples"
+    puts "I have \#{apples} apples"
     # or
     puts "I have %s apples" % apples
     # or
