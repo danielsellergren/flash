@@ -1,26 +1,5 @@
-<p id="notice"><%= notice %></p>
-
-<h1>All Flashcards</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @cards.each do |card| %>
-      <tr>
-        <td><%= card.topic %>
-        <td><%= link_to 'Show', card %></td>
-        <td><%= link_to 'Edit', edit_card_path(card) %></td>
-        <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Flashcard', new_card_path, class: 'button' %>
+<ul>
+<% @cards.each do |card| %>
+  <li><%= link_to card.topic, card %></li>
+<% end %>
+</ul>

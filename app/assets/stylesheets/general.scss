@@ -1,24 +1,62 @@
+// Import
+@import "font-awesome";
+
+// Global styles
 body {
   padding: 0 10px;
 }
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+a {
+  color: #e4685d;
+}
+.links {
+  text-align: center;
+}
+h1, h2 {
+  text-align: center;
+  word-wrap: break-word;
+}
 
+// Header
+header {
+  clear: both;
+  margin: 1em;
+  overflow: auto;
+  .logo {
+    float: left;
+  }
+  nav {
+    float: right;
+    text-align: right;
+    margin: 3px 0 0 0;
+    a {
+      font-size: 1.4em;
+      padding: 1em;
+    }
+  }
+}
+
+// Generic buttons
 .button {
-  -moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
-  -webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
-  box-shadow:inset 0px 39px 0px -24px #e67a73;
-  background-color:#e4685d;
-  -moz-border-radius:4px;
-  -webkit-border-radius:4px;
-  border-radius:4px;
-  border:1px solid #ffffff;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:Courier New;
-  font-size:15px;
-  padding:13px 33px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #b23e35;
+  -moz-box-shadow: inset 0px 39px 0px -24px #e67a73;
+  -webkit-box-shadow: inset 0px 39px 0px -24px #e67a73;
+  box-shadow: inset 0px 39px 0px -24px #e67a73;
+  background-color: #e4685d;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Courier New;
+  font-size: 15px;
+  padding: 13px 33px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
 }
 .button:hover {
   background-color:#eb675e;
@@ -26,4 +64,40 @@ body {
 .button:active {
   position:relative;
   top:1px;
+}
+
+// Home and Show
+#topic {
+  font-size: 2em;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-family: Georgia, sans-serif;
+}
+#hide-button {
+  display: none;
+}
+#definition {
+  display: none;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  pre {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+  code {
+    font-size: 0.8em;
+    font-family: 'Courier New';
+    font-weight: 100;
+    line-height: 0.8em;
+  }
+}
+
+// Index
+
+// Mobile
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
 }
