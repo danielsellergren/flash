@@ -1,5 +1,10 @@
-<ul>
-<% @cards.each do |card| %>
-  <li><%= link_to card.topic, card %></li>
-<% end %>
+<h2>Alphabetical</h2>
+<% @cards.each do |alpha, cards| -%>
+  <h3><%= alpha %></h3>
+  <ul class="index">
+    <% cards.each do |card| -%>
+    <li><%= link_to card.topic, card %></li>
+    <% end -%>
+  </ul>
+<% end -%>
 </ul>

@@ -15,9 +15,17 @@ a {
 .links {
   text-align: center;
 }
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
   word-wrap: break-word;
+  font-size: 2em;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-family: Georgia, sans-serif;
+}
+h3 {
+  font-size: 1.6em;
+  text-align: left;
 }
 
 // Header
@@ -59,19 +67,15 @@ header {
   text-shadow: 0px 1px 0px #b23e35;
 }
 .button:hover {
-  background-color:#eb675e;
+  background-color: #eb675e;
 }
 .button:active {
-  position:relative;
-  top:1px;
+  position: relative;
+  top: 1px;
 }
 
 // Home and Show
 #topic {
-  font-size: 2em;
-  letter-spacing: 0px;
-  font-weight: 400;
-  font-family: Georgia, sans-serif;
 }
 #hide-button {
   display: none;
@@ -94,10 +98,22 @@ header {
 }
 
 // Index
+.index {
+  list-style-type: square;
+  margin-left: 20px;
+  line-height: 1.8em;
+  font-size: 1.2em;
+  a {
+    padding: 5px;
+  }
+}
 
 // Mobile
 @media (max-width: 600px) {
   .container {
     width: 100%;
+    .index {
+
+    }
   }
 }
