@@ -11,13 +11,13 @@ $(document).ready(function() {
   $showButton.on('click', function(e) {
     $definition.show();
     $showButton.hide();
-    $hideButton.show();
+    $hideButton.css({ 'display' : 'inline-block' });
   });
 
   // Hide button
   $hideButton.on('click', function(e) {
     $definition.hide();
-    $showButton.show();
+    $showButton.css({ 'display' : 'inline-block' });
     $hideButton.hide();
   });
 
