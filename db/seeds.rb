@@ -252,3 +252,15 @@ In contrast, imperative programming changes state with commands in the source la
 * [Wikipedia - Functional programming](https://en.wikipedia.org/wiki/Functional_programming)
   )
 )
+Card.create!(
+  topic: "Segmentation Fault",
+  definition: %(
+In computing, a segmentation fault (often shortened to segfault) or access violation is a fault raised by hardware with memory protection, notifying an operating system (OS) about a memory access violation; on x86 computers this is a form of general protection fault. The OS kernel will in response usually perform some corrective action, generally passing the fault on to the offending process by sending the process a signal. Processes can in some cases install a custom signal handler, allowing them to recover on their own, but otherwise the OS default signal handler is used, generally causing abnormal termination of the process (a program crash), and sometimes a core dump.
+
+Segmentation faults are a common class of error in programs written in languages like C that provide low-level memory access. They arise primarily due to errors in use of pointers for virtual memory addressing, particularly illegal access. Another type of memory access error is a bus error, which also has various causes, but is today much rarer; these occur primarily due to incorrect physical memory addressing, or due to misaligned memory access – these are memory references that the hardware cannot address, rather than references that a process is not allowed to address.
+
+### Links
+
+* [Wikipedia - Segmentation fault](https://en.wikipedia.org/wiki/Segmentation_fault)
+  )
+)
