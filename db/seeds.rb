@@ -219,3 +219,36 @@ A finite-state machine (FSM) or finite-state automaton (plural: automata), or si
 * [Wikipedia - Finite-state machine](https://en.wikipedia.org/wiki/Finite-state_machine)
   )
 )
+Card.create!(
+  topic: "Foreign Function Interface",
+  definition: %(
+A foreign function interface (FFI) is a mechanism by which a program written in one programming language can call routines or make use of services written in another. In most cases, a FFI is defined by a "higher-level" language, so that it may employ services defined and implemented in a lower level language, typically a systems language like C or C++. This is typically done to either access OS services in the language in which the OS' API is defined, or for performance considerations.
+
+The primary function of a FFI is to mate the semantics and calling conventions of one programming language (the host language, or the language which defines the FFI), with the semantics and conventions of another (the guest language). This process must also take into consideration the runtime environments and/or application binary interfaces of both. This can be done in several ways:
+
+* Requiring that guest-language functions which are to be host-language callable be specified or implemented in a particular way; often using a compatibility library of some sort.
+* Use of a tool to automatically "wrap" guest-language functions with appropriate glue code, which performs any necessary translation.
+* Use of wrapper libraries
+* Restricting the set of host language capabilities which can be used cross-language. For example, C++ functions called from C may not (in general) include reference parameters or throw exceptions.
+
+The major dynamic languages, such as Python, Perl, Tcl, and Ruby, all provide easy access to native code written in C/C++ (or any other language obeying C/C++ calling conventions).
+
+### Links
+
+* [Wikipedia - Foreign function interface](https://en.wikipedia.org/wiki/Foreign_function_interface)
+  )
+)
+Card.create!(
+  topic: "Functional programming",
+  definition: %(
+In computer science, functional programming is a programming paradigm—a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. It is a declarative programming paradigm, which means programming is done with expressions. In functional code, the output value of a function depends only on the arguments that are input to the function, so calling a function f twice with the same value for an argument x will produce the same result f(x) each time. Eliminating side effects, i.e. changes in state that do not depend on the function inputs, can make it much easier to understand and predict the behavior of a program, which is one of the key motivations for the development of functional programming.
+
+Functional programming has its roots in lambda calculus, a formal system developed in the 1930s to investigate computability, the Entscheidungsproblem, function definition, function application, and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus. Another well-known declarative programming paradigm, logic programming, is based on relations.[1]
+
+In contrast, imperative programming changes state with commands in the source language, the most simple example being assignment. Imperative programming does have functions—not in the mathematical sense—but in the sense of subroutines. They can have side effects that may change the value of program state. Functions without return values therefore make sense. Because of this, they lack referential transparency, i.e. the same language expression can result in different values at different times depending on the state of the executing program.
+
+### Links
+
+* [Wikipedia - Functional programming](https://en.wikipedia.org/wiki/Functional_programming)
+  )
+)
