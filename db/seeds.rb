@@ -264,3 +264,50 @@ Segmentation faults are a common class of error in programs written in languages
 * [Wikipedia - Segmentation fault](https://en.wikipedia.org/wiki/Segmentation_fault)
   )
 )
+Card.create!(
+  topic: "Binstubs",
+  definition: %(
+Binstubs are wrapper scripts around executables (sometimes referred to as "binaries", although they don't have to be compiled) whose purpose is to prepare the environment before dispatching the call to the original executable.
+
+In the Ruby world, the most common binstubs are the ones that RubyGems generates after installing a gem that contains executables. But binstubs can be written in any language, and it often makes sense to create them manually.
+
+### Links
+
+* [Understanding binstubs](https://github.com/rbenv/rbenv/wiki/Understanding-binstubs)
+  )
+)
+Card.create!(
+  topic: "Reflection",
+  definition: %(
+Reflection is the ability of a computer program to examine (see type introspection) and modify its own structure and behavior (specifically the values, meta-data, properties and functions) at runtime.
+
+A reflection-oriented program component can monitor the execution of an enclosure of code and can modify itself according to a desired goal related to that enclosure. This is typically accomplished by dynamically assigning program code at runtime.
+
+In object oriented programming languages such as Java, reflection allows inspection of classes, interfaces, fields and methods at runtime without knowing the names of the interfaces, fields, methods at compile time. It also allows instantiation of new objects and invocation of methods.
+
+Reflection can be used to adapt a given program to different situations dynamically. Reflection-oriented programming almost always requires additional knowledge, framework, relational mapping, and object relevance in order to take advantage of more generic code execution.
+
+Reflection is often used as part of software testing, such as for the runtime creation/instantiation of mock objects.
+
+Reflection is also a key strategy for metaprogramming.
+
+### Example in Ruby
+
+    # Without reflection
+    obj = Foo.new
+    obj.hello
+
+    # With reflection
+    class_name = "Foo"
+    method_name = :hello
+    obj = Object.const_get(class_name).new
+    obj.send method_name
+
+    # With eval
+    eval "Foo.new.hello"
+
+### Links
+
+* [Wikipedia - Reflection (computer programming)](https://en.wikipedia.org/wiki/Reflection_(computer_programming))
+  )
+)
