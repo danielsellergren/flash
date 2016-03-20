@@ -4,6 +4,7 @@
 // Global styles
 body {
   padding: 0 10px;
+  font-family: Georgia, sans-serif;
 }
 .container {
   width: 600px;
@@ -21,7 +22,6 @@ h1, h2, h3 {
   font-size: 2em;
   letter-spacing: 0px;
   font-weight: 400;
-  font-family: Georgia, sans-serif;
 }
 h3 {
   font-size: 1.6em;
@@ -84,6 +84,9 @@ header {
   display: none;
   line-height: 1.4em;
   font-size: 1.2em;
+  h3 {
+    font-size: 1.3em;
+  }
 }
 pre {
   display: block;
